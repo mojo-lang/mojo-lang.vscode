@@ -1,0 +1,30 @@
+{
+    "name": "mojo-lang",
+    "displayName": "Mojo Lang",
+    "description": "Syntax highlight for mojo lang",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mojo",
+            "aliases": ["Mojo", "mojo"],
+            "extensions": [".mojo"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "mojo",
+            "scopeName": "source.mojo",
+            "path": "./syntaxes/mojo.tmLanguage.json"
+        }]
+    },
+    "publisher": "frankee",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mojo-lang/mojo-lang.git"
+    }
+}
